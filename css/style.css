@@ -1,0 +1,100 @@
+ body {
+    font-family: arial;
+ }
+
+ #todo {
+     width: 400px;
+     margin: 50px;
+     border: 1px solid sienna;
+     border-radius: 30px;
+     box-shadow: 0px 0px 8px steelblue;
+ }
+
+ .todo-header {
+     background-color: springgreen;
+     border-radius: 30px 30px 0 0;
+     height: 80px;
+ }
+ 
+ h2 {
+     text-align: center;
+     margin: 0;
+     line-height: 80px;
+     font-size: 30px;
+     color: white;
+ }
+
+ .tasks {
+     margin: 0;
+     padding: 0;
+ }
+
+ .task {
+     list-style: none;
+     /* border: 1px solid sienna; */
+     height: 50px;
+     display: flex;
+     line-height: 50px;
+ }
+
+ .col-1 {
+     width: 10%;
+     background-color: green;
+     text-align: center;
+ }
+
+ .col-2 {
+    border: 1px solid green;
+     padding-left: 10px;
+     width: 70%;
+     /* border: 0; */
+     /* margin: 0; */
+ }
+
+ .col-3 {
+    width: 20%;
+    background-color: green;
+ }
+
+ .task-remove {
+     background-image: url(../img/trash.svg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 30px;
+ }
+
+ .add-field {
+     width: 80%;
+     padding-left: 10px;
+     /* border: 0; */
+     border: 1px solid green;
+ }
+
+ .add-button {
+     border: 0;
+     padding: 0;
+     font-size: 40px;
+     font-weight: bold;
+     color: #3f94d6;
+ }
+
+ .add-block {
+     height: 50px;
+     display: flex;
+ }
+
+ .task:last-child .col-1 {
+     border-radius: 0 0 0 30px;
+ }
+
+ .task:last-child .col-3 {
+    border-radius: 0 0 30px 0;
+}
+
+.col-3:hover {
+    background-color: rgb(161, 187, 235);
+}
+
+.checked {
+    text-decoration: line-through;
+}
